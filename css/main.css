@@ -1,0 +1,126 @@
+body 
+{
+    background-color:white;
+}
+
+img 
+{
+    max-width: 100%;
+}
+
+/* Adopting the mobile-first strategy */
+/* styles for the Mobile Layout */
+/* styles for the id = container */
+
+#headercontainer 
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header 
+{
+    margin-top: 0.2em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+ nav 
+ {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+  
+/* styles specifies the padding and margins of the unordered list in nav */
+nav ul 
+{
+    padding: 0;
+    text-decoration: none;
+}
+  
+/* styles for the li in nav */
+nav li 
+{
+    background-color: #ffd9dd;
+    border-radius: 0.2em;
+    margin: 0.22em;
+    padding: 0.5em;
+    border-color: black;
+}
+
+nav li a
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: #259443;
+}
+
+nav li a:hover
+{
+    color: white;
+}
+
+p
+{
+    margin-top: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #259443;
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+h2
+{
+    color: #f94c60;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styling for desktop viewport begins here */
+@media only screen and (min-width: 999px) 
+  {
+    header 
+    {
+        margin-top: 0.2em;
+        border-radius: 0.5em;
+        text-align: left;
+        background-color: #bfffd0;
+    }
+
+    nav
+    {
+        float: right;
+        margin-top: -3.6em;
+    }
+
+    nav ul
+    {
+        margin-right: 2em;
+    }
+
+    nav li
+    {
+        display: inline;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        margin-left: -0.7em;
+        background: transparent;
+    }
+
+    .registerlogin
+    {
+        float:right;
+        margin-top: -8.5em;    
+    }
+
+    footer
+    {
+        background-color:#f0f0f0;
+        margin-top: -0.2em;
+        padding: 0.5em;
+        position: fixed;
+        bottom: 0;
+    }
+}
