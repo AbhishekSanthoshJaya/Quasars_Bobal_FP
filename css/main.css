@@ -24,6 +24,7 @@ header
     margin-top: 0.2em;
     border-radius: 0.5em;
     text-align: center;
+    background-color: #bfffd0;
 }
 
  nav 
@@ -32,6 +33,7 @@ header
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
+    border-color: black;
 }
   
 /* styles specifies the padding and margins of the unordered list in nav */
@@ -39,16 +41,17 @@ nav ul
 {
     padding: 0;
     text-decoration: none;
+    
 }
   
 /* styles for the li in nav */
 nav li 
 {
-    background-color: #ffd9dd;
+    background-color: #bfffd0;
     border-radius: 0.2em;
     margin: 0.22em;
     padding: 0.5em;
-    border-color: black;
+    
 }
 
 nav li a
@@ -79,19 +82,19 @@ h1, h2
 }
 
 footer
-    {
-        background-color:#f0f0f0;
-        margin-top: 15em;
-        padding: 0.2em;
-        bottom: 0;
-    }
+{
+    background-color:#f0f0f0;
+    margin-top: 15em;
+    padding: 0.2em;
+    bottom: 0;
+}
 
-/* Styling for css page  */
+/* Styling for registration form  */
 * {box-sizing: border-box}
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  padding: 12px;
 }
 
 /* Full-width input fields */
@@ -123,7 +126,6 @@ hr {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
   opacity: 0.9;
 }
 
@@ -140,6 +142,11 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+}
+
+label
+{
+    color: #259443;
 }
 
 /* Styling for desktop viewport begins here */
