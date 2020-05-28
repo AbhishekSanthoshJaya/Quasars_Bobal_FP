@@ -72,10 +72,74 @@ p
     text-align: justify;
 }
 
-h2
+h1, h2
 {
-    color: #f94c60;
+    color: #259443;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer
+    {
+        background-color:#f0f0f0;
+        margin-top: 15em;
+        padding: 0.2em;
+        bottom: 0;
+    }
+
+/* Styling for css page  */
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
 }
 
 /* Styling for desktop viewport begins here */
@@ -115,12 +179,4 @@ h2
         margin-top: -8.5em;    
     }
 
-    footer
-    {
-        background-color:#f0f0f0;
-        margin-top: -0.2em;
-        padding: 0.5em;
-        position: fixed;
-        bottom: 0;
-    }
 }
