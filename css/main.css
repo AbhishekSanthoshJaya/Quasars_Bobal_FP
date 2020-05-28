@@ -104,7 +104,7 @@ input[type=text], input[type=password] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #bfffd0;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -147,6 +147,24 @@ a {
 label
 {
     color: #259443;
+}
+
+.imgcontainer
+{
+    margin-top: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    height: 25%;
+    width: 25%;
+    padding: 0.8em;
+}
+
+.signincontainer
+{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 55%;
 }
 
 /* Styling for desktop viewport begins here */
