@@ -15,27 +15,26 @@ img
 #headercontainer 
 {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 header 
 {
-    margin-top: 0.2em;
-    border-radius: 0.5em;
     text-align: center;
-    background-color: #bfffd0;
+    background-color:#303030;
+    padding: 3em;
 }
 
- nav 
- {
+nav 
+{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
     border-color: black;
 }
-  
+
 /* styles specifies the padding and margins of the unordered list in nav */
 nav ul 
 {
@@ -119,7 +118,7 @@ hr {
 }
 
 /* Set a style for the submit/register button */
-.registerbtn {
+.registerbtn, .loginbtn, .cancelbtn {
   background-color: #4CAF50;
   color: white;
   padding: 16px 20px;
@@ -166,6 +165,17 @@ label
     margin-left: auto;
     display: block;
     width: 75%;
+    border: 0.2em groove #4CAF50;
+    padding:3em;
+}
+
+.signincontainer2
+{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 75%;
 }
 
 input, select, textarea
@@ -198,10 +208,24 @@ form ul
   {
     header 
     {
-        margin-top: 0.2em;
-        border-radius: 0.5em;
         text-align: left;
-        background-color: #bfffd0;
+    }
+
+    .explore h1
+    {
+        position: absolute;
+        top: 12.3em;
+        left: 4.8em;
+        color:#303030;
+        font-size: 3em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .explore h1 a 
+    {
+        list-style-type: none;
+        text-decoration: none;
+        color:#303030;
     }
 
     nav
