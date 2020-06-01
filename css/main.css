@@ -19,6 +19,17 @@ img
     margin-right: auto; */
 }
 
+.homecontainer
+{
+  height: 22em;
+  width: 100%;
+  margin-top: 0.6em;
+  border-radius: 1em;
+  background: rgb(0,164,58);
+  background: linear-gradient(90deg, rgba(0,164,58,1) 0%, rgba(44,202,107,1) 17%, rgba(44,202,107,1) 87%, rgba(0,164,58,1) 100%);
+}
+
+
 .banner
 {
     display: none;
@@ -207,7 +218,22 @@ form ul
     list-style-type: none;
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
 
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
 
 /* Styling for desktop viewport begins here */
 @media only screen and (min-width: 688px)
@@ -236,10 +262,18 @@ form ul
         display: inline;
         position: absolute;
         top: 12.3em;
-        left: 4.8em;
-        color:#303030;
+        left: 4.6em;
+        color: #4CAF50;
         font-size: 3em;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #303030;
+        padding-right: 0.2em;
+        padding-left: 0.2em;
+        border-radius: 0.2em;
+
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+        transform: scale(1);
+        animation: pulse 2s infinite;
     }
 
     .explore h1 a 
@@ -247,7 +281,7 @@ form ul
         display: inline;
         list-style-type: none;
         text-decoration: none;
-        color:#303030;
+        color:#4CAF50;
     }
 
     nav
