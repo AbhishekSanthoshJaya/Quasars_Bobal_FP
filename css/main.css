@@ -23,12 +23,11 @@ img
 {
   height: 22em;
   width: 100%;
-  margin-top: 0.6em;
-  border-radius: 1em;
-  background: rgb(0,164,58);
-  background: linear-gradient(90deg, rgba(0,164,58,1) 0%, rgba(44,202,107,1) 17%, rgba(44,202,107,1) 87%, rgba(0,164,58,1) 100%);
+  margin-top: -0.3em;
+  border: ridge black;
+  background: rgb(255,219,54);
+  background: linear-gradient(90deg, rgba(255,219,54,0.846673703661152) 0%, rgba(255,219,54,1) 100%);
 }
-
 
 .banner
 {
@@ -257,6 +256,14 @@ form ul
         text-align: left;
     }
 
+    .indeximages
+    {
+        float: right;
+        margin-right: 18em;
+        margin-top: 1em;
+        width: 20em;
+    }
+
     .explore h1
     {
         display: inline;
@@ -270,7 +277,10 @@ form ul
         padding-right: 0.2em;
         padding-left: 0.2em;
         border-radius: 0.2em;
+    }
 
+    .explore h1:hover
+    {
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
         transform: scale(1);
         animation: pulse 2s infinite;
@@ -282,6 +292,35 @@ form ul
         list-style-type: none;
         text-decoration: none;
         color:#4CAF50;
+    }
+
+    .indextexts
+    {
+        display: inline;
+        position: absolute;
+        top: 22em;
+        left: 8em;
+        color: #4CAF50;
+        font-size: 3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-right: 0.2em;
+        padding-left: 0.2em;
+        border-radius: 0.2em;
+    }
+
+    .indextexts a
+    {
+        display: inline;
+        list-style-type: none;
+        text-decoration: none;
+        color:#303030;
+    }
+    
+    .indextexts:hover
+    {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+        transform: scale(1);
+        animation: pulse 2s infinite;
     }
 
     nav
