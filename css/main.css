@@ -8,6 +8,7 @@ img
     max-width: 100%;
 }
 
+
 /* Adopting the mobile-first strategy */
 /* styles for the Mobile Layout */
 /* styles for the id = container */
@@ -24,9 +25,14 @@ img
     text-align: center;
 }
 
-.fielcontainer
+.fieldcontainer
 {
     margin-left: 1.1em;
+}
+
+.bannertext
+{
+    display: none;    
 }
 
 .homecontainer
@@ -161,7 +167,7 @@ hr {
 }
 
 /* Set a style for the submit/register button */
-.registerbtn, .loginbtn, .cancelbtn {
+.formbtns, .loginbtn, .cancelbtn {
   background-color: #4CAF50;
   color: white;
   padding: 16px 20px;
@@ -274,6 +280,35 @@ form ul
         padding-top: 1em;
         display: flex;
         overflow: hidden;
+    }
+
+    /* .asidediv
+    {
+        margin-left: 2em;
+    } */
+
+    h4
+    {
+        color: #259443;
+    }
+
+    aside
+    {
+        float: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border:#4CAF50;
+        color: #259443;
+        width: 90%;
+        border-radius: 1.2em 0 0 1.2em;
+        border: ridge 0.6em;
+        padding-bottom: 1.2em;
+        margin-bottom: 1em;
+        background-color: #ddd;
+    }
+
+    .desktop
+    {
+        display: none;
     }
 /* Styling for desktop viewport begins here */
 @media only screen and (min-width: 688px)
@@ -437,11 +472,6 @@ form ul
         margin-left: 2em;
     }
 
-    h4
-    {
-        color: #259443;
-    }
-
     aside
     {
         float: left;
@@ -454,5 +484,14 @@ form ul
         padding-bottom: 1.2em;
         margin-left: 1em;
         margin-right: 1em;
+    }
+    .desktop
+    {
+        display: inline;
+    }
+
+    .mobile
+    {
+        display: none;
     }
 }
