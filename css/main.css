@@ -19,6 +19,10 @@ img
     margin-right: auto; */
 }
 
+.fielcontainer
+{
+    margin-left: 1.1em;
+}
 .homecontainer
 {
   height: 22em;
@@ -31,7 +35,11 @@ img
 
 .containersignin
 {
-    
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background-color: #cfcfcf;
+    margin-left: 1em;
+    width: 75%;
 }
 
 .banner
@@ -250,6 +258,7 @@ form ul
 
 .regisbtns
     {
+        margin-left: 1.2em;
         padding-top: 1em;
         display: flex;
         overflow: hidden;
@@ -374,4 +383,12 @@ form ul
         margin-top: -12.5em;    
     }
 
+    .containersignin
+    {
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        background-color: #cfcfcf;
+        margin-left: 1em;
+        width: 25%;
+    }
 }
