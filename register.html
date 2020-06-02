@@ -32,7 +32,7 @@
           <p>Please fill in this form to create an account.</p>
           <hr>
       
-          <div class="container signin">
+          <div class="containersignin">
             <p>Already have an account? <a href="signin.html">Sign in</a>.</p>
           </div>
           <br>
@@ -44,10 +44,32 @@
       
           <label for="psw-repeat"><b>Repeat Password</b></label>
           <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-          <hr>
       
-          <p>By creating an account you agree to our <a href="https://generator.lorem-ipsum.info/terms-and-conditions" target="_blank"">Terms & Conditions</a>.</p>
-          <button type="submit" class="registerbtn">Register</button>
+          <label for="psw-repeat"><b>Date of Birth</b></label>
+          <input type="date" placeholder="Date of Birth" name="psw-repeat" id="psw-repeat" required>
+
+          <label for="psw-repeat"><b>Gender</b></label>
+          <div class="genderselect">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+          </div>
+
+          <label for="psw-repeat"><b>Comments</b></label> 
+         <textarea name="message" 
+         id="message" 
+         cols="30" 
+         rows="4"></textarea>
+
+          <p>By creating an account you agree to our <a href="https://generator.lorem-ipsum.info/terms-and-conditions"
+             target="_blank">Terms & Conditions</a>.</p>
+          <div class="regisbtns">
+          <button type="submit" class="registerbtn">Register</button>&nbsp;
+          <input type="reset" class="registerbtn" value="Reset Form">
+          </div>
         </div>
       </form>
   </main>
