@@ -19,10 +19,16 @@ img
     margin-right: auto; */
 }
 
+.divcontainer
+{
+    text-align: center;
+}
+
 .fielcontainer
 {
     margin-left: 1.1em;
 }
+
 .homecontainer
 {
   height: 22em;
@@ -61,7 +67,7 @@ header
 
 nav 
 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.25em;
     font-weight: bold;
     text-align: center;
@@ -249,6 +255,12 @@ form ul
 	}
 }
 
+.registrationlabel
+{
+    font-size: 1.2em;
+    padding-bottom: 0.6em;
+}
+
 .genderselect
     {
         padding-top: 1em;
@@ -276,7 +288,20 @@ form ul
         display: inline;
     } 
   }
-
+  .bannertext
+  {
+    display: inline;
+    position: absolute;
+    top: 5.4em;
+    left: 1.5em;
+    /* margin-left: 18em; */
+    color: #303030;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    border-radius: 0.2em;
+  }
 /* Styling for desktop viewport begins here */
 @media only screen and (min-width: 999px) 
   {
@@ -293,11 +318,26 @@ form ul
         width: 20em;
     }
 
-    .explore h1
+    .gameswehave
+    {
+        display: inline-block;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+    .gameswehave img
+    {
+        padding-right: 2.2em;
+        padding-left: 2.2em;
+        display: inline-block;
+        text-align: center;
+    }   
+
+    .explore h3
     {
         display: inline;
         position: absolute;
-        top: 12.3em;
+        top: 12em;
         left: 4.6em;
         color: #4CAF50;
         font-size: 3em;
@@ -308,19 +348,19 @@ form ul
         border-radius: 0.2em;
     }
 
-    .explore h1:hover
+    .explore h3:hover
     {
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
         transform: scale(1);
         animation: pulse 2s infinite;
     }
 
-    .explore h1 a 
+    .explore h3 a 
     {
         display: inline;
         list-style-type: none;
         text-decoration: none;
-        color:#4CAF50;
+        color:#ddd;
     }
 
     .indextexts
@@ -390,5 +430,29 @@ form ul
         background-color: #cfcfcf;
         margin-left: 1em;
         width: 25%;
+    }
+
+    .asidediv
+    {
+        margin-left: 2em;
+    }
+
+    h4
+    {
+        color: #259443;
+    }
+
+    aside
+    {
+        float: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border:#4CAF50;
+        color: #259443;
+        width: 17%;
+        border-radius: 1.2em 0 0 1.2em;
+        border: ridge 0.6em;
+        padding-bottom: 1.2em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 }
