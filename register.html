@@ -47,7 +47,7 @@
           <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
       
           <label for="dob" class="registrationlabel"><b>Date of Birth</b></label>
-          <input type="date" placeholder="Date of Birth" name="dob" id="psw-repeat" required>
+          <input type="date" placeholder="Date of Birth" name="dob" id="dob" required>
             <br>
           <label for="gender" class="registrationlabel"><b>Gender</b></label>
           <div class="genderselect">
@@ -68,7 +68,7 @@
           <p>By creating an account you agree to our <a href="https://generator.lorem-ipsum.info/terms-and-conditions"
              target="_blank">Terms & Conditions</a>.</p>
           <div class="regisbtns">
-          <button type="submit" class="formbtns">Register</button>&nbsp;
+          <button type="submit" class="formbtns" id="register-btn">Register</button>&nbsp;
           <input type="reset" class="formbtns" value="Reset Form">
           </div>
         </div>
@@ -80,5 +80,14 @@
     &copy; Copyright 2020. All Rights reserved. <br/>
   </footer>
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script src="script/db.js"></script>
+<script src="script/passwordUtil.js"></script>
+<script src="script/register.js"></script>
+
 </body>
 </html>

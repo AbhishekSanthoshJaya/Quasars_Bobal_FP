@@ -8,6 +8,10 @@ img
     max-width: 100%;
 }
 
+.hidden{
+    display: none;
+}
+
 
 /* Adopting the mobile-first strategy */
 /* styles for the Mobile Layout */
