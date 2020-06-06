@@ -5,18 +5,32 @@ body{
     background-color: #ecf0f3;
 }
 
+.form-canvas{
+    height: 100vh;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 .form-container{
-    max-width: 70%;
-    margin: 2px auto 20% auto;
+    max-width: 90%;
     background: #ecf0f3;
     box-shadow: -13px -13px 20px #ffffff, 13px 13px 20px #cbced1;
-    padding: 2em;
+    padding: 0.5em;
     border-radius: 30px;
     margin-top: 2rem;
     
 } 
+
+#image-form-group{
+    background-color: white;
+
+}
+
 
 .form-group {
     background-color:#04879C;
@@ -50,7 +64,7 @@ body{
     border: 0;
     padding: 0.2rem 0;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-indent:1rem;
 }
 
@@ -62,6 +76,25 @@ body{
     display: block;
     font-size: 0.9rem;
     text-indent:1rem;
+}
+
+#image-upload input{
+    padding: 0rem;
+    font-size: 0.7rem;
+  
+
+}
+
+#image-upload label{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+
+#image-upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 
@@ -92,20 +125,61 @@ input[type=file]{
 }
 
 label[for='image-upload']{
+    color: black;
+}
+
+
+.form-button-container{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.form-button-container button{
+    background-color: #6C63FF;
+    width: 100%;
     color: white;
+    padding: 0.3rem;
 }
 
 
 
-
+.input-group option{
+    font-size: 0.9rem;
+    
+}
 
 @media only screen and (min-width: 680px) {
 
 
     .form-container{
-        max-width: 40%;
+        max-width: 80%;
+        padding: 2em;
+
 
     }
 
+    .form-button-container button{
+        width: 60%;
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 999px) {
+
+
+    .form-container{
+        max-width: 40%;
+        padding: 2em;
+
+
+    }
+
+    .form-button-container button{
+        width: 60%;
+    }
+    
 
 }
