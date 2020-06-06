@@ -1,10 +1,11 @@
 $(document).ready(function () {
     checkLoginCookie();
     var selectedVenueName = "";
+    loadResults();
 
-    $(".search button").click(function (e) { 
-        e.preventDefault();
-        console.log("clicked");
+
+
+    function loadResults(){
 
         $(".lister").empty();
         $(".loader").toggleClass("hidden");
@@ -48,6 +49,13 @@ $(document).ready(function () {
             console.log('data read');
             
         }
+    }
+
+    $(".search button").click(function (e) { 
+        e.preventDefault();
+        console.log("clicked");
+        loadResults();
+       
         
     });
 
