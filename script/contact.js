@@ -45,6 +45,13 @@ $("button[type=submit]").click(function (e) {
 
     trans.oncomplete = function(e) {
         console.log('data stored');
+        showSnackBar("Message Sent", "green");
+        window.setTimeout(function(){
+
+            // Move to a new location or you can do something else
+            window.location = 'profile.html';
+    
+        }, 1000);
     }
 
     // get the db access ---------------------->

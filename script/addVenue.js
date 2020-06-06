@@ -60,6 +60,9 @@ $(document).ready(function () {
         
                 trans.oncomplete = function(e) {
                     console.log('data stored');
+                    
+        
+
                 }
             }
 
@@ -87,6 +90,13 @@ $(document).ready(function () {
 
         trans.oncomplete = function(e) {
             console.log('data stored');
+            showSnackBar("Venue Added", "green");
+                    window.setTimeout(function(){
+
+                        // Move to a new location or you can do something else
+                        window.location = 'services.html';
+                
+                    }, 1000);
         }
 
         // get the db access ---------------------->
