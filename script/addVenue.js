@@ -21,6 +21,9 @@ $(document).ready(function () {
         let state = $("#state").val();
         console.log(state);
 
+        let venueRate = $("#venue-rate").val();
+        console.log(venueRate);
+
         let description = $("#description").val();
         console.log(description);
 
@@ -70,6 +73,7 @@ $(document).ready(function () {
             state: state,
             description:description,
             sports: sports,
+            venueRate: venueRate
         };
         // Save to venue table
 

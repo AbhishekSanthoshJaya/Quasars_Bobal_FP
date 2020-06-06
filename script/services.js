@@ -82,14 +82,14 @@ $(document).ready(function () {
                 <div class="second-type">
                     <i></i>
                     <div class="second-name">`+
-                    venueObj.rate + `$/hr
+                    venueObj.venueRate + `$ /hr
                     </div>
                 </div>
 
                 <div class="third-type">
                     <i></i>
                     <div class="third-name">`
-                         +venueObj.city+ `,`+ venueObj.state+
+                         +venueObj.city+ `, `+ venueObj.state+
                     `</div>
                 </div>
 
