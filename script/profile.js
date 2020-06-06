@@ -157,7 +157,7 @@ $(document).ready(function () {
 
                 <div class="lower-deck">
                 <div class="first-type">
-                    Desc:
+                    Email:
                     <div class="first-name">`+
                     messageObj.email+
                     `</div>
