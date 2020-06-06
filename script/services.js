@@ -131,7 +131,9 @@ $(document).ready(function () {
         var tmpid = $(document.activeElement).attr('id'); 
         if(tmpid == "confirm-btn"){
             let email = readCookie("email");
-            let ob = {venueName: selectedVenueName, email:email }
+            let bookingDate = $('.datepicker').datepicker().val();
+
+            let ob = {venueName: selectedVenueName, email:email ,bookingDate:bookingDate}
             let trans = db.transaction([DB_BOOKING_STORE], 'readwrite');
             let addReq = trans.objectStore(DB_BOOKING_STORE).add(ob);
     
