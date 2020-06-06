@@ -35,7 +35,7 @@ body {
 
    #nav-profile{
        max-width: 8rem;
-       overflow: scroll;
+       overflow: hidden;
    }
    
    .overlay{
@@ -231,6 +231,7 @@ body {
     #explore-cta{
         color: white;
         background-color: #6C63FF;
+        width: 50%;
     }
 
     #sign-up-cta{
@@ -274,6 +275,35 @@ body {
      .col img {
          height: 100%;
      }
+
+
+
+     footer{
+        
+       
+        display: flex;
+        justify-content: center;
+        background-color: #CCCCCC;
+
+    }
+
+    footer a {
+        height: auto;
+    }
+
+    footer ul{
+
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+        margin: 2px 5px 2px 5px;
+    }
+
+    footer li {
+        margin-right: 5px;
+    }
 
 
 
@@ -342,12 +372,21 @@ body {
             width: 50vh;
         }
 
+        #hero-desc{
+            justify-content: flex-start;
+            margin-top: 20rem;
+            align-items: center;
+        }
+
         #hero-desc .hero-title {
-            font-size: 3.12rem;
+            font-size: 2.0rem;
+            
         }
         
         #hero-desc .hero-sub-title, .hero-desc-text {
-            font-size: 1.87rem;
+            font-size: 1.3rem;
+            padding-left: 1.5rem;
+            padding-bottom: 5rem;
         }
         
         #hero-desc .hero-desc-text {
@@ -355,21 +394,7 @@ body {
             font-size: 1.7rem;
         }
         
-        
-        #scroll-indicator > p {
-            font-size: 1.2rem;
-        }
-        
-        
-        #scroll-indicator #scroll-mouse {
-            height: 3rem;
-            width: 8rem;
-        }
-        
-        #scroll-indicator #scroll-down {
-            height: 0.5rem;
-            width: 2rem;
-        }
+   
         
         .flex{
             display: flex;
