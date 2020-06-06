@@ -2,6 +2,14 @@ $(document).ready(function () {
     
     let email = readCookie("email");
 
+
+    $("#logout").click(function (e) { 
+        e.preventDefault();
+        eraseCookie('email');
+        window.location ="signin.html";
+        
+    });
+
     let trans = db.transaction([DB_BOOKING_STORE], 'readwrite');
         let req = trans.objectStore(DB_BOOKING_STORE).openCursor();
 
