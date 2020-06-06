@@ -64,9 +64,64 @@
 
   .result{
       width: 85%;
-      background-color: cadetblue;
       margin: 0.5rem;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+      transition: all 0.5s ease-in-out;
+      font-size: 0.7rem;
+      padding: 0.7rem;
+      border-radius: 5px;
   }
+
+  .result:hover{
+    box-shadow: 0px 5px 14px rgba(0,0,0,0.4);
+}
+
+  .result .img-container{
+      background-image: url('../images/bobal_logo.png');
+      /* background-position: fixed; */
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 30%;
+      max-width: 30%;
+  }
+
+  .result .detail-container{
+      flex-grow: 2;
+      display: flex;
+      flex-direction: column;
+  }
+
+
+  .upper-deck, .lower-deck{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+  }
+
+  .lower-deck{
+    margin-top: 1rem;
+  }
+
+  .upper-deck .card-title{
+      flex-grow: 2;
+      font-size: 1rem;
+      font-weight: bold;
+      padding-left: 0.5rem;
+      display: flex;
+      justify-content: center;
+  }
+
+  .upper-deck .card-btn{
+      line-height: 1rem;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      
+  }
+
 
 
 
@@ -78,8 +133,15 @@
 
     .result{
         width: 68%;
-        background-color: cadetblue;
         margin: 0.5rem;
+        font-size: 1.2rem;
     }
 
+
+    .upper-deck .card-title{
+       
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding-left: 0.5rem;
+    }
   }
