@@ -123,17 +123,17 @@ $(document).ready(function () {
                 <div class="lower-deck">
                     <div class="first-type">
                         Venue:
-                        <div class="first-name">`+
+                        <span class="first-name">`+
                         venueObj.venueName+
-                        `</div>
+                        `</span>
                     </div>
     
                     <div class="second-type">
                         <i></i>
                         Booking Date:
-                        <div class="second-name">`+
+                        <span class="second-name">`+
                         venueObj.bookingDate + `
-                        </div>
+                        </span>
                     </div>
     
                     
@@ -159,25 +159,25 @@ $(document).ready(function () {
                 <div class="lower-deck">
                     <div class="first-type">
                         Name:
-                        <div class="first-name">`+
+                        <span class="first-name" style="font-size:bold">`+
                         messageObj.name+
-                        `</div>
+                        `</span>
                     </div>
     
                     <div class="second-type">
                         <i></i>
                         title:
-                        <div class="second-name">`+
+                        <span class="second-name">`+
                         messageObj.subject + `
-                        </div>
+                        </span>
                     </div>
 
                     <div class="third-type">
                         <i></i>
                         Date:
-                        <div class="third-name">`+
+                        <span class="third-name">`+
                         messageObj.sentDate + `
-                        </div>
+                        </span>
                     </div>
     
                     
@@ -189,9 +189,9 @@ $(document).ready(function () {
                 <div class="lower-deck">
                 <div class="first-type">
                     Desc:
-                    <div class="first-name">`+
+                    <span class="first-name">`+
                     messageObj.description+
-                    `</div>
+                    `</span>
                 </div>
                 </div>
 
@@ -199,9 +199,9 @@ $(document).ready(function () {
                 <div class="lower-deck">
                 <div class="first-type">
                     Email:
-                    <div class="first-name">`+
+                    <span class="first-name">`+
                     messageObj.email+
-                    `</div>
+                    `</span>
                 </div>
                 </div>
 
