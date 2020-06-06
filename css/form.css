@@ -6,18 +6,21 @@ body{
 }
 
 .form-canvas{
-    height: 100vh;
     min-height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 
 
 .form-container{
     max-width: 90%;
+    width: 90%;
     background: #ecf0f3;
     box-shadow: -13px -13px 20px #ffffff, 13px 13px 20px #cbced1;
     padding: 0.5em;
@@ -171,7 +174,7 @@ label[for='image-upload']{
 
 
     .form-container{
-        max-width: 40%;
+        max-width: 35%;
         padding: 2em;
 
 
