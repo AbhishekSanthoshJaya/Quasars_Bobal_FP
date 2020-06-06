@@ -49,25 +49,32 @@ $(document).ready(function () {
            
     
             <div class="detail-container">
-                <div class="upper-deck">
-                    
-                    <div class="card-title">
-                        <div>`+
-                            venueObj.venueName+
+               
+                <div class="lower-deck">
+                    <div class="first-type">
+                        Venue:
+                        <div class="first-name">`+
+                        venueObj.venueName+
                         `</div>
-                        
                     </div>
+    
+                    <div class="second-type">
+                        <i></i>
+                        Booking Date:
+                        <div class="second-name">`+
+                        venueObj.bookingDate + `
+                        </div>
+                    </div>
+    
                     
-                   
+    
                     
     
                 </div>
-                
     
             </div>
                 
-            </div>`
-    
+        </div>`
         $(txt).appendTo(".lister");
         }
 

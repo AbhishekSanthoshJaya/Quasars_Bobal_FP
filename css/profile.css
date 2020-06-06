@@ -84,7 +84,10 @@ hr{
 
 
 .profile-body{
-    padding: 1rem
+    padding: 1rem;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 @media only screen and (min-width: 660px){
@@ -94,6 +97,10 @@ hr{
 
     .profile-info > div{
        padding: 1rem 2rem;
+    }
+
+    .result{
+        width: 85%;
     }
 
 }
@@ -106,6 +113,10 @@ hr{
         max-width: 70%;
         padding: 2em;
 
+    }
+
+    .result{
+        width: 85%;
     }
 
 }
