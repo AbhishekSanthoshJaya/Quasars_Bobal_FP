@@ -1,9 +1,14 @@
 $(document).ready(function () {
     checkLoginCookie();
+    var selectedVenueName = "";
 
     $(".search button").click(function (e) { 
         e.preventDefault();
         console.log("clicked");
+
+        $(".lister").empty();
+        $(".loader").toggleClass("hidden");
+       
 
 
         // read from database
@@ -27,14 +32,26 @@ $(document).ready(function () {
             }
             else {
                 // no more results
+                $(".loader").toggleClass("hidden");
+               
+                $(".card-btn").click(function (e) { 
+                    e.preventDefault();
+                    selectedVenueName = $(this).attr("data");
+                    console.log(selectedVenueName);
+                    $("#booking-confirm-venue").text(selectedVenueName);
+                    $("#confirmModal").modal('show');
+                });
             }
          };
 
         req.oncomplete = function(e) {
             console.log('data read');
+            
         }
         
     });
+
+    $('.datepicker').datepicker();
 
 
     function addResultToLister(venueObj){
@@ -48,9 +65,10 @@ $(document).ready(function () {
             sportsStr = sportsStr = venueObj.sports[0] + " & "+ (venueObj.sports.length -1) + " more"
         }
 
+        
+       
 
-        $(".lister").append(
-
+        var txt = 
         `<div class="result">
         <div class="img-container">
         </div>
@@ -65,9 +83,12 @@ $(document).ready(function () {
                     
                 </div>
                 
-                <a class="card-btn cta-btn">
+                <div class="book-btn"  data-toggle="modal" data-target="#confirmModal">
+                <a class="card-btn cta-btn" data="`+venueObj.venueName +`" >
                     Book
                 </a>
+                </div>
+                
 
             </div>
             <div class="lower-deck">
@@ -99,7 +120,33 @@ $(document).ready(function () {
 
         </div>
             
-    </div>`);
+    </div>`
+
+    $(txt).appendTo(".lister");
     }
+
+
+
+    $('#confirmModal').on('hide.bs.modal', function (e) { 
+        var tmpid = $(document.activeElement).attr('id'); 
+        if(tmpid == "confirm-btn"){
+            let email = readCookie("email");
+            let ob = {venueName: selectedVenueName, email:email }
+            let trans = db.transaction([DB_BOOKING_STORE], 'readwrite');
+            let addReq = trans.objectStore(DB_BOOKING_STORE).add(ob);
+    
+            addReq.onerror = function(e) {
+                console.log('error storing data');
+                console.error(e);
+            }
+    
+            trans.oncomplete = function(e) {
+                console.log('data stored');
+            }
+
+
+        }
+
+    }); 
 
 });

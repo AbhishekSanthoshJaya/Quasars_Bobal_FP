@@ -10,6 +10,8 @@ const DB_VERSION = 1;
 const DB_USER_STORE = 'users'
 const DB_IMAGE_STORE = 'images'
 const DB_VENUE_STORE = 'venues'
+const DB_BOOKING_STORE = 'bookings'
+
 
 
 
@@ -43,6 +45,9 @@ req.onupgradeneeded = function (evt) {
 
     var venueStore = evt.currentTarget.result.createObjectStore(
       DB_VENUE_STORE, {  keyPath: 'venueName' ,autoIncrement: true });
+
+    var bookingStore = evt.currentTarget.result.createObjectStore(
+      DB_BOOKING_STORE, { autoIncrement: true });
 };
 
 
