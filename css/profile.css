@@ -16,6 +16,10 @@ body{
 
 }
 
+.hidden{
+    display: none;
+}
+
 #logout:hover{
     cursor: pointer;
 }

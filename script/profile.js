@@ -3,6 +3,8 @@ $(document).ready(function () {
     let email = readCookie("email");
     updateProfile();
 
+    let userType;
+
     $("#logout").click(function (e) { 
         e.preventDefault();
         eraseCookie('email');
@@ -28,6 +30,11 @@ $(document).ready(function () {
             $("#mail").text(request.result.email);
             $("#dob").text(request.result.dob);
 
+            userType = request.result.userType;
+            if(userType == "owner"){
+                $("#add-venue").toggleClass("hidden");
+            }
+
 
 
         };
@@ -47,10 +54,11 @@ $(document).ready(function () {
             if (cursor) {
                 let key = cursor.primaryKey;
                 let value = cursor.value;
-                if(value.email == email){
+                if(userType == 'admin'  || value.email == email){
                     console.log(key, value);
+                    addBookingsToLister(value);
                 }
-                addBookingsToLister(value);
+                
                 // addResultToLister(value);
                 cursor.continue();
             }
@@ -83,10 +91,11 @@ $(document).ready(function () {
             if (cursor) {
                 let key = cursor.primaryKey;
                 let value = cursor.value;
-                if(value.email == email){
+                if(userType == 'admin'  || value.email == email){
                     console.log(key, value);
+                    addMessagesToLister(value);
                 }
-                addMessagesToLister(value);
+                
                 cursor.continue();
             }
             else {

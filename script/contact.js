@@ -8,6 +8,11 @@ $("button[type=submit]").click(function (e) {
     console.log(name);
 
     let email = $("#email").val();
+    let emailCookie = readCookie("email");
+    if(emailCookie != undefined){
+        email = emailCookie
+    }
+
     console.log(email);
 
     let subject = $("#subject").val();
