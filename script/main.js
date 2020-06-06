@@ -60,10 +60,10 @@ function addProfileInfo(){
     if(checkLoginCookie()){
         let cookie = document.cookie;
         let email = readCookie("email");
-        $("#nav-profile").attr("href","/profile.html").text(email);
+        $("#nav-profile").attr("href","profile.html").text(email);
     }
     else{
-        $("#nav-profile").attr("href","/signin.html").text("log in");
+        $("#nav-profile").attr("href","signin.html").text("log in");
     }
 }
 
@@ -78,3 +78,16 @@ function checkLoginCookie(){
     }
 }
 
+
+function showSnackBar(msg, color) {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+    x.style.backgroundColor = color;
+    x.innerHTML = msg;
+  
+    // Add the "show" class to DIV
+    x.className = "show";
+  
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }

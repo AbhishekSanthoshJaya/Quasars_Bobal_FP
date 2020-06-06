@@ -25,7 +25,8 @@ $(document).ready(function () {
 
 
         if(password != repassword){
-            alert("Both Passwords are not same.")
+            // alert("Both Passwords are not same.")
+            showSnackBar("Both Passwords are not same.", "red");
             return
         }
 
@@ -67,6 +68,8 @@ $(document).ready(function () {
 
         trans.oncomplete = function(e) {
             console.log('data stored');
+            showSnackBar("Account Created", "green");
+
         }
 
         // get the db access ---------------------->
