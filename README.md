@@ -14,6 +14,12 @@ We have used the following folders and files to implement our website:<br>
 
 ### *HTML files*<br>
 * **index.html**: Landing page
+* **signin.html**: Allows users to sign in once they have registered.
+* **register.html**: Contains a registration form for users to fill in so that they can have an account on our site.
+* **addVenue.html**: Contains a form that allows addition of venues.
+* **services.html**: Page that allows users to see the venues they have added along with its information.
+* **contact.html**: A html page containing a form that allows users to send a message to the site owners.
+* **about.html**: Contains information about our services.
 
 
 
