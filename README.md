@@ -21,7 +21,16 @@ We have used the following folders and files to implement our website:<br>
 * **contact.html**: A html page containing a form that allows users to send a message to the site owners.
 * **about.html**: Contains information about our services.
 
-
+### *JS files*<br>
+* **db.js**: Contains database compatibility checks and initiliaziing operations
+* **index.js**: Removes cookies once a user logs out.
+* **login.js**: Gets the user inputs from the email and password field and checks them against the stored email and hashed password
+* **register.js**: Stores the user information from the form to the database.
+* **profile.js**: Displays user information along with messages and booked games.
+* **passwordUtil.js**: Generates a hashed password using a salt.
+* **main.js**: Contains methods to create, read and delete cookies. 
+* **contact.js**: Stores message information to the database.
+* **addVenue.js**: Stores venue information to the database.
 
 ## REFERENCES
 * [Freecodecamp.org](https://www.freecodecamp.org/news/a-quick-but-complete-guide-to-indexeddb-25f030425501/) - Working with Indexeddb
