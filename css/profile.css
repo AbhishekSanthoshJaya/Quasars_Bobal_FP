@@ -19,10 +19,97 @@ body{
 
 .profile-container{
     max-width: 90%;
+    width: 90%;
     background: #ecf0f3;
     box-shadow: -13px -13px 20px #ffffff, 13px 13px 20px #cbced1;
     padding: 0.5em;
     border-radius: 30px;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 } 
+
+hr{
+    border: #949494;
+    border-style: inset;
+    width: 100%;
+}
+
+.profile-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+#profile-image{
+    height: 70px;
+        width: 70px;
+        background-size: contain;
+        background-position: center;
+        border-radius: 50%;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+        position: relative;
+        margin-bottom: 1rem;
+}
+
+#profile-name{
+    font-size: 1.8rem;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.profile-info > div{
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img{
+    height: 20px;
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+
+
+.profile-body{
+    padding: 1rem
+}
+
+@media only screen and (min-width: 660px){
+    .profile-info{
+        flex-direction: row;
+    }
+
+    .profile-info > div{
+       padding: 1rem 2rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 999px) {
+
+
+    .profile-container{
+        max-width: 70%;
+        padding: 2em;
+
+    }
+
+}
+    
+
+
+
