@@ -17,14 +17,36 @@
 
   <div class="form-canvas">
 
+    <div class="logo-container">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="140" height="61" viewBox="0 0 249 61">
+                <g id="Group_27" data-name="Group 27" transform="translate(-140 -21)">
+                  <g id="Group_1" data-name="Group 1" transform="translate(30 0.5)">
+                    <text id="B" transform="translate(117.5 68.5)" fill="#191546" font-size="50" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">B</tspan></text>
+                    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(110 21)" fill="none" stroke="#707070" stroke-linejoin="round" stroke-width="5">
+                      <rect width="58" height="60" stroke="none"/>
+                      <rect x="2.5" y="2.5" width="53" height="55" fill="none"/>
+                    </g>
+                  </g>
+                  <text id="BOBAL" transform="translate(209 69)" fill="#5d51ed" font-size="48" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">BOBAL</tspan></text>
+                </g>
+              </svg>
+
+        </a>
+       
+
+    </div>
+
     <div class="form-container">
         <div class="form-title">
-            Add Venue Information
+            Log In
         </div>
         <div class="form-group">
             <div class="input-group">
-                <label for="venue-name">Venue Name</label>
-                <input type="text" id="venue-name">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
             </div>
             
 
@@ -32,81 +54,22 @@
 
         <div class="form-section">
             <div class="form-group">
+                
                 <div class="input-group">
-                    <label for="address">Address</label>
-                    <input type="text" id="address">
-                </div>
-                <div class="input-group">
-                    <label for="pincode">Pincode</label>
-                    <input type="text" id="pincode">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
                 </div>
     
             </div>
 
-            <div class="form-group">
-                <div class="input-group">
-                    <label for="city">City</label>
-                    <input type="text" id="city">
-                </div>
-                <div class="input-group">
-                    <label for="state">State</label>
-                    <input type="text" id="state">
-                </div>
-    
-            </div>
+         
 
         </div>
 
-        <div class="form-section">
-            <div class="form-group" id="image-form-group">
-                <div class="input-group" id="image-upload">
-                    <label for="image-upload" >Images</label><br>
-                    <input id="image-upload-input"  type="file"  accept="image/*" multiple >
-        
-                </div>
-            </div>
-
-        </div>
-
-        <div class="form-section">
-            <div class="form-group">
-                <div class="input-group">
-                    <select id="multiselect" multiple="multiple" class="custom-select">
-                        <option value="Soccer">Soccer</option>
-                        <option value="Basketball">Basketball</option>
-                        <option value="Hockey">Hockey</option>
-                        <option value="Volleyball">Volleyball</option>
-                        <option value="Table-Tenis">Table Tennis</option>
-                        <option value="Cricket">Cricket</option>
-
-                      </select>
-            </div>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="input-group">
-                <label for="venue-rate">Hourly Rate</label>
-                <input type="text" id="venue-rate">
-            </div>
-            
-
-        </div>
-        
-
-        <div class="form-group">
-            <div class="input-group">
-                <label for="description">Description</label>
-                <!-- <input type="" id="description" class="description"> -->
-                <textarea class="description" id="description">
-                    
-                </textarea>
-            </div>
-
-        </div>
+       
 
         <div class="form-button-container">
-            <button type="submit" class="cta-btn"> Submit</button>
+            <button type="submit" class="cta-btn"> Log In</button>
 
         </div>
 
@@ -124,7 +87,9 @@
   <script src="script/db.js"></script>
 
 <script src="script/main.js"></script>
-<script src="script/addVenue.js"></script>
+<script src="script/passwordUtil.js"></script>
+
+<script src="script/login.js"></script>
 
 </body>
 </html>
