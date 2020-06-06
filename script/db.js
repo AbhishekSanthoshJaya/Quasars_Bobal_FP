@@ -11,6 +11,8 @@ const DB_USER_STORE = 'users'
 const DB_IMAGE_STORE = 'images'
 const DB_VENUE_STORE = 'venues'
 const DB_BOOKING_STORE = 'bookings'
+const DB_MESSAGES_STORE = 'messages'
+
 
 
 
@@ -48,6 +50,9 @@ req.onupgradeneeded = function (evt) {
 
     var bookingStore = evt.currentTarget.result.createObjectStore(
       DB_BOOKING_STORE, { autoIncrement: true });
+
+    var messageStore = evt.currentTarget.result.createObjectStore(
+        DB_MESSAGES_STORE, { autoIncrement: true });
 };
 
 
