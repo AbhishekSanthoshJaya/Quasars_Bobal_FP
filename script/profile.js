@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
     let email = readCookie("email");
-
+    updateProfile();
 
     $("#logout").click(function (e) { 
         e.preventDefault();
@@ -9,6 +9,30 @@ $(document).ready(function () {
         window.location ="signin.html";
         
     });
+
+
+    function updateProfile(){
+
+        
+        var transaction = db.transaction([DB_USER_STORE]);
+        var objectStore = transaction.objectStore(DB_USER_STORE);
+        var request = objectStore.get(email);
+        request.onerror = function(event) {
+            console.log("Error while reading");
+        };
+        request.onsuccess = function(event) {
+            // Do something with the request.result!
+            let email = readCookie("email");
+            $("#profile-name").text(request.result.firstname +" " + request.result.lastname+" | "+request.result.userType);
+            $("#gender").text(request.result.gender);
+            $("#mail").text(request.result.email);
+            $("#dob").text(request.result.dob);
+
+
+
+        };
+
+    }
 
     let trans = db.transaction([DB_BOOKING_STORE], 'readwrite');
         let req = trans.objectStore(DB_BOOKING_STORE).openCursor();
