@@ -40,6 +40,7 @@ We have used the following folders and files to implement our website:<br>
 * **search.css**: Contains styles for the search boxes.
 * **spinner.css**: Generates a loading spinner effect.
 
-
 ## REFERENCES
 * [Freecodecamp.org](https://www.freecodecamp.org/news/a-quick-but-complete-guide-to-indexeddb-25f030425501/) - Working with Indexeddb
+* [Developers.google.com](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/indexeddb-best-practices) - Best practicies for using web storage
+* [Dribbble.org](https://dribbble.com/) - For site design ideas
