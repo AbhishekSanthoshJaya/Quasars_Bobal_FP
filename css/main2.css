@@ -306,6 +306,86 @@ body {
     }
 
 
+/* Styles for contact page */
+    .contact-note {
+        color:white;
+    }
+
+
+    .form-container{
+        max-width: 95%;
+        margin: -3em auto 20% auto;
+    } 
+
+    .form-group {
+        background-color:rgb(59, 101, 151);
+        border: 4px solid #0C3C78;
+        box-shadow: 0px 3px 8px rgba(white,0.3);
+        display: flex;
+        margin: 5px;
+    }
+    
+    /* Styles for place holder text */
+    input {
+        width: 400px;
+        padding: 0 20px;
+    }
+    
+    input,
+    input::-webkit-input-placeholder {
+        font-size: 15px;
+        line-height: 3;
+        color: black;
+    }
+
+    .input-group {
+        position: relative;
+        flex:1;
+        padding: 1px;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+    .input-group label{
+        position: absolute;
+        font-size: 0.7rem;
+        padding: 2px;
+    }
+
+    .input-group input {
+        height: 2.2rem;
+        width: 100%;
+        border: 0;
+        padding: 0;
+        display: block;
+        font-size: 20px;
+    }
+
+
+    input[type="submit"]{
+        background-color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .input-group #message{
+        height: 10rem;
+    }
+
+
+    .contact-note{
+        font-size: 2rem;
+        margin: 20% auto 10% auto;
+        text-align: center;
+    }
+
+    #contact-input-grp{
+        margin-top: 1rem;
+    }
+
+
+
 
      @media only screen and (min-width: 680px) {
 
@@ -468,4 +548,10 @@ body {
         
         }
 
+        /* Styles for contact page */
+
+        .form-container
+        {
+            margin-top: -11em;
+        }
     }
