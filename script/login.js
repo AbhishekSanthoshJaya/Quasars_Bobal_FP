@@ -10,11 +10,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
     $("#login-btn").click(function (e) { 
         e.preventDefault();
         isValid();
@@ -51,16 +46,20 @@ function isValid(){
         q.onsuccess = function(event) {
         
             if(q.result == undefined){
-                alert("Username or Password didn't match");
+                // alert("Username or Password didn't match");
+                showSnackBar("Email or Password didn't match", "red");
+                return;
+
             }
             else{
                 console.log( q.result.password);
                 if(isPasswordCorrect(q.result.password,q.result.salt,passwordAttempt)){
                     createCookie("email",email,1);
+                    showSnackBar("Login Successfull", "green");
                     window.location = 'index.html';
                 }
                 else{
-                    alert("Username or Password didn't match");
+                    showSnackBar("Email or Password didn't match", "red");
 
                 }
             }

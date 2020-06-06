@@ -1,0 +1,63 @@
+.form-canvas{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.nav-link{
+    background-color: #ecf0f3;
+
+}
+
+
+
+
+.form-container{
+    max-width: 90%;
+    width: 90%;
+    background: #ecf0f3;
+    box-shadow: -13px -13px 20px #ffffff, 13px 13px 20px #cbced1;
+    padding: 0.5em;
+    border-radius: 30px;
+    margin-top: 2rem;
+    
+} 
+@media only screen and (min-width: 680px) {
+
+
+    .form-container{
+        max-width: 80%;
+        padding: 2em;
+
+
+    }
+
+    .form-button-container button{
+        width: 60%;
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 999px) {
+
+
+    .form-container{
+        max-width: 90%;
+        padding: 2em;
+
+
+    }
+
+    .form-button-container button{
+        width: 60%;
+    }
+    
+
+}
+
