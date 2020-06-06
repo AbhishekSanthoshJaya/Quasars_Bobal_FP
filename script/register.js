@@ -69,6 +69,12 @@ $(document).ready(function () {
         trans.oncomplete = function(e) {
             console.log('data stored');
             showSnackBar("Account Created", "green");
+            window.setTimeout(function(){
+
+                // Move to a new location or you can do something else
+                window.location = 'signin.html';
+        
+            }, 1000);
 
         }
 

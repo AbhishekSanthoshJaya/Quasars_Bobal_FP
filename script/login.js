@@ -56,7 +56,13 @@ function isValid(){
                 if(isPasswordCorrect(q.result.password,q.result.salt,passwordAttempt)){
                     createCookie("email",email,1);
                     showSnackBar("Login Successfull", "green");
-                    window.location = 'index.html';
+                    window.setTimeout(function(){
+
+                        // Move to a new location or you can do something else
+                        window.location = 'index.html';
+                
+                    }, 1000);
+                    
                 }
                 else{
                     showSnackBar("Email or Password didn't match", "red");
