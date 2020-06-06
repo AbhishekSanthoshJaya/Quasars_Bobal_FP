@@ -35,6 +35,9 @@ $(document).ready(function () {
         let gender =$("input:radio[name ='gender']:checked").val();
         console.log(gender);
 
+        let userType =$("input:radio[name ='user-type']:checked").val();
+        console.log(userType);
+
     
         let hashPasswordDict = hashPassword(password)
         let hashedPassword = hashPasswordDict.hash;
@@ -50,6 +53,7 @@ $(document).ready(function () {
             salt:salt,
             dob:dob,
             gender: gender,
+            userType: userType
         };
         // Save to venue table
 

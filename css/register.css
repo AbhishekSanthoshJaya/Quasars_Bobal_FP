@@ -4,3 +4,8 @@
     display: flex;
     flex-direction: column;
 }
+
+
+label.radio-inline{
+    padding: 0 2rem;
+}
