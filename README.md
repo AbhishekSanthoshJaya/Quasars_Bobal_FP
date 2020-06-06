@@ -32,5 +32,14 @@ We have used the following folders and files to implement our website:<br>
 * **contact.js**: Stores message information to the database.
 * **addVenue.js**: Stores venue information to the database.
 
+### *CSS files*<br>
+* **contact.css**: Contains styling for the contact page.
+* **form.css**: Contains default styling for forms.
+* **main.css and main2.css**: Contains styling for the initial design and final designs of the content pages.
+* **profile.css**: Contains styling information for the use profile.
+* **search.css**: Contains styles for the search boxes.
+* **spinner.css**: Generates a loading spinner effect.
+
+
 ## REFERENCES
 * [Freecodecamp.org](https://www.freecodecamp.org/news/a-quick-but-complete-guide-to-indexeddb-25f030425501/) - Working with Indexeddb
